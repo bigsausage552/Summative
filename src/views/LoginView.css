@@ -6,6 +6,10 @@
   padding: 20px 20px;
 }
 
+.logo-nav img {
+  max-width: 100px;
+  height: auto;
+}
 
 .sign-in-page {
   height: 100vh;
@@ -87,17 +91,18 @@ form .info {
   padding: 16px 0;
   font-size: 1rem;
   border: none;
-  color: #fff;
+  color: black;
   font-weight: 500;
   border-radius: 4px;
   margin: 5px 0 10px;
-  background: rgb(0, 25, 181);
+  background: white;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .sign-in-btn:hover {
-  background: rgb(0, 16, 122);
+  background: #ffa31a;
+  transform: scale(1.03);
 }
 
 form .help {
@@ -132,6 +137,7 @@ form .help :where(label, a) {
 
 .sign-in p a:hover {
   text-decoration: underline;
+  color: #ffa31a;
 }
 
 @media (max-width: 740px) {

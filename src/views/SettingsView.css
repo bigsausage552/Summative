@@ -9,7 +9,7 @@
 }
 
 .settings-logo-nav img {
-  max-width: 150px;
+  max-width: 100px;
   margin-bottom: 20px;
   cursor: pointer;
 }
@@ -107,7 +107,7 @@
 }
 
 .settings-genre-button.selected {
-  background: #007bff;
+  background: #ffa31a;
 }
 
 .settings-genre-button:hover {
@@ -117,7 +117,7 @@
 .settings-save-btn {
   margin-top: 20px;
   padding: 10px 20px;
-  background: #007bff;
+  background: #ffa31a;
   color: #fff;
   font-size: 1rem;
   border: none;
@@ -127,7 +127,7 @@
 }
 
 .settings-save-btn:hover {
-  background: #0056b3;
+  background: #ffa31a;
 }
 
 .settings-purchases-container {

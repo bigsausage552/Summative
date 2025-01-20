@@ -3,9 +3,9 @@ import { useStoreContext } from '../context/Context';
 import { useState } from 'react';
 import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 import { auth } from '../firebase';
-import './SignInView.css';
+import './LoginView.css';
 
-function SignInView() {
+function LoginView() {
   const navigate = useNavigate();
   const [emailInput, setEmailInput] = useState('');
   const [passInput, setPassInput] = useState('');
@@ -43,7 +43,7 @@ function SignInView() {
       </nav>
       <div className="sign-in-page">
         <div className="sign-in">
-          <h2>SIGN IN</h2>
+          <h2>LOGIN</h2>
           <form onSubmit={(event) => { loginByEmail(event) }}>
             <div className="info">
               <input
@@ -65,14 +65,14 @@ function SignInView() {
               />
               <label>Password</label>
             </div>
-            <button className="sign-in-btn" type="submit">Sign In</button>
+            <button className="sign-in-btn" type="submit">Login</button>
           </form>
           <button className="sign-in-btn" onClick={() => loginByGoogle()}>Sign In With Google</button>
-          <p>New to Flixit? <Link to="/signup">Sign up now</Link></p>
+          <p>New to NETDIX? <Link to="/signup">Register</Link></p>
         </div>
       </div>
     </div>
   );
 }
 
-export default SignInView;
+export default LoginView;

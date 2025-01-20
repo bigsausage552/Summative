@@ -67,7 +67,7 @@ function CartView() {
           }
         </div>
       ) : (
-        <p className="empty-cart-message">Your cart is empty. Add some movies!</p>
+        <p className="empty-cart-message">Your cart is empty.</p>
       )}
 
       {cart.size > 0 && (

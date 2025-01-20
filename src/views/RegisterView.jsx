@@ -5,9 +5,9 @@ import { useStoreContext } from '../context/Context';
 import { createUserWithEmailAndPassword, updateProfile, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { auth, firestore } from "../firebase";
 import { doc, setDoc } from "firebase/firestore";
-import './SignUpView.css';
+import './RegisterView.css';
 
-function SignUpView() {
+function RegisterView() {
   const navigate = useNavigate();
   const [firstNameInput, setFirstNameInput] = useState('');
   const [lastNameInput, setLastNameInput] = useState('');
@@ -95,7 +95,7 @@ function SignUpView() {
       </nav>
       <div className="sign-up-page">
         <div className="sign-up">
-          <h2>SIGN UP</h2>
+          <h2>REGISTER</h2>
           <form onSubmit={(e) => registerByEmail(e)}>
             <div className="info">
               <input type="text" name="first" onChange={(e) => setFirstNameInput(e.target.value)} required />
@@ -133,10 +133,10 @@ function SignUpView() {
                 ))}
               </div>
             </div>
-            <button className="sign-up-btn" type="submit">Sign Up</button>
+            <button className="sign-up-btn" type="submit">Register</button>
           </form>
           <button className="sign-up-btn" onClick={() => registerByGoogle()}>Sign Up With Google</button>
-          <p>Already Have An Account? <Link to="/signin">Sign In</Link></p>
+          <p>Already Have An Account? <Link to="/signin">Login</Link></p>
 
         </div>
       </div>
@@ -144,4 +144,4 @@ function SignUpView() {
   );
 }
 
-export default SignUpView;
+export default RegisterView;

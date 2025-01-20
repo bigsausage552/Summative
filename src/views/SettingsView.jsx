@@ -92,7 +92,7 @@ function SettingsView() {
               required={isGoogleUser}
               readOnly={isGoogleUser}
             />
-            <label className="settings-label">New First Name</label>
+            <label className="settings-label">First Name</label>
           </div>
           <div className="settings-input-container">
             <input
@@ -103,7 +103,7 @@ function SettingsView() {
               required={isGoogleUser}
               readOnly={isGoogleUser}
             />
-            <label className="settings-label">New Last Name</label>
+            <label className="settings-label">Last Name</label>
           </div>
           <div className="settings-input-container">
             <input

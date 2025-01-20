@@ -22,6 +22,7 @@
 }
 
 .feature-list-more:hover {
+  color:#ffa31a;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -67,7 +68,8 @@
 }
 
 .feature-list-item-title,
-.feature-list-item-description {
+.feature-list-item-description,
+.feature-list-item-button {
   position: absolute;
   left: 10px;
   right: 10px;
@@ -88,6 +90,22 @@
   font-size: 14px;
   opacity: 0;
   z-index: 2;
+}
+
+.feature-list-item-button {
+  bottom: 40px;
+  padding: 8px 15px;
+  background-color: #ffa41a;
+  color: black;
+  border-radius: 10px;
+  border: none;
+  opacity: 0;
+  z-index: 2;
+}
+
+.feature-list-item-button:hover {
+  background-color: #ffa31a;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 800px) {

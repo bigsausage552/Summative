@@ -24,17 +24,11 @@ function Header() {
   return (
     <div className="navbar">
       <div className="navbar-container">
-        <div className="logo-container">
-          <h1 className="logo" onClick={() => navigate("/")}>Flixit</h1>
+      <div className="logo-container" onClick={() => navigate("/")}>
+          <img src="/src/imgs/logo.png" alt="NetDix Logo" className="logo-image" />
         </div>
         <div className="menu-container">
-          <ul className="menu-list">
-            <li
-              className={`menu-list-item ${isActive("/") ? "active" : ""}`}
-              onClick={() => navigate("/")}
-            >
-              Home
-            </li>
+          <ul className="menu-list">     
             <li
               className={`menu-list-item ${isActive("/movies") ? "active" : ""}`}
               onClick={() => navigate("/movies")}
